@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <form id="weather-form">
+            <div id="photo">
+            <img src="https://media.wired.com/photos/65e83b818d5140963a083095/16:9/w_2288,h_1287,c_limit/weather.jpg" width="250">
+            </div>
+            <input type="text" id="location-input" placeholder="Enter location" required>
+            <button type="submit">Get Weather</button>
+        </form>
+        <div id="loading" class="hidden">Loading...</div>
+        <div id="weather-display" class="hidden">
+            <h2 id="location-name"></h2>
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <button id="toggle-unit">Switch to Fahrenheit</button>
+        </div>
+        <div id="gif-left"></div>
+        <div id="gif-right"></div>
+    </div>
+    <script src="app.js" defer></script>
+</body>
+</html>

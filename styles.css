@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #87CEEB; /* Default sunny sky color */
+}
+
+#app {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#weather-display {
+    margin-top: 20px;
+}
+
+#gif-left, #gif-right {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 30%; /* Adjust width as needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1; /* Keep behind main content */
+}
+
+#gif-left {
+    left: 0; /* Stick to the left */
+}
+
+#gif-right {
+    right: 0; /* Stick to the right */
+}
+
+#photo {
+    right:0;
+}
